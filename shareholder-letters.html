@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareholder Letters | Berkshire Hathaway</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            color: #202b3c;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #10233f;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e3b34c;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #10233f, #244d79);
+            color: white;
+            padding: 75px 8%;
+        }
+
+        .hero span {
+            color: #e3b34c;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin: 12px 0;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #d9e2ee;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 55px auto;
+            padding: 0 25px;
+        }
+
+        .intro {
+            margin-bottom: 35px;
+        }
+
+        .intro h2 {
+            font-size: 26px;
+            color: #10233f;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            color: #657184;
+        }
+
+        .year-group {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #e1e6ed;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+        }
+
+        .year-group summary {
+            cursor: pointer;
+            padding: 20px 25px;
+            font-size: 17px;
+            font-weight: bold;
+            color: #10233f;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .year-group summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .year-group summary::after {
+            content: "+";
+            font-size: 24px;
+            color: #bd9137;
+        }
+
+        .year-group[open] summary::after {
+            content: "−";
+        }
+
+        .year-group summary:hover {
+            background: #f8fafc;
+        }
+
+        .years {
+            padding: 5px 25px 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 12px;
+        }
+
+        .year-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 16px;
+            background: #f4f6f9;
+            border: 1px solid #e1e6ed;
+            border-radius: 7px;
+            color: #244d79;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .year-link:hover {
+            background: #10233f;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .year-link span {
+            font-size: 12px;
+        }
+
+        .greg-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            border: 1px solid #e1e6ed;
+        }
+
+        .greg-section h2 {
+            color: #10233f;
+            margin-bottom: 10px;
+        }
+
+        .greg-section p {
+            color: #657184;
+            margin-bottom: 20px;
+        }
+
+        .greg-link {
+            display: inline-block;
+            background: #10233f;
+            color: white;
+            padding: 13px 22px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .greg-link:hover {
+            background: #244d79;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 35px;
+            color: #244d79;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #10233f;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 70px;
+            font-size: 13px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 0 12px 0 0;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .years {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BERKSHIRE HATHAWAY</div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#inversionistas">Inversionistas</a>
+            <a href="index.html#empresas">Empresas</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <span>Investor Relations</span>
+        <h1>Shareholder Letters</h1>
+        <p>
+            Explore the annual letters to Berkshire Hathaway shareholders,
+            including the historical letters written by Warren Buffett.
+        </p>
+    </section>
+
+    <main>
+
+        <section class="intro">
+            <h2>Warren Buffett's Letters</h2>
+            <p>
+                Select a year to read the corresponding shareholder letter.
+                The documents are hosted on the official Berkshire Hathaway website.
+            </p>
+        </section>
+
+        <!-- 1977 - 1989 -->
+        <details class="year-group">
+            <summary>1977 – 1989</summary>
+            <div class="years">
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1977.html" target="_blank">1977 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1978.html" target="_blank">1978 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1979.html" target="_blank">1979 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1980.html" target="_blank">1980 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1981.html" target="_blank">1981 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1982.html" target="_blank">1982 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1983.html" target="_blank">1983 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1984.html" target="_blank">1984 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1985.html" target="_blank">1985 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1986.html" target="_blank">1986 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1987.html" target="_blank">1987 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1988.html" target="_blank">1988 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1989.html" target="_blank">1989 <span>↗</span></a>
+            </div>
+        </details>
+
+        <!-- 1990 - 1999 -->
+        <details class="year-group">
+            <summary>1990 – 1999</summary>
+            <div class="years">
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1990.html" target="_blank">1990 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1991.html" target="_blank">1991 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1992.html" target="_blank">1992 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1993.html" target="_blank">1993 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1994.html" target="_blank">1994 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1995.html" target="_blank">1995 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1996.html" target="_blank">1996 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1997.html" target="_blank">1997 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1998.html" target="_blank">1998 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/1999.html" target="_blank">1999 <span>↗</span></a>
+            </div>
+        </details>
+
+        <!-- 2000 - 2009 -->
+        <details class="year-group">
+            <summary>2000 – 2009</summary>
+            <div class="years">
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2000.html" target="_blank">2000 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2001.html" target="_blank">2001 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2002.html" target="_blank">2002 <span>↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2003ltr.pdf" target="_blank">2003 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2004ltr.pdf" target="_blank">2004 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2005ltr.pdf" target="_blank">2005 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2006ltr.pdf" target="_blank">2006 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2007ltr.pdf" target="_blank">2007 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2008ltr.pdf" target="_blank">2008 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2009ltr.pdf" target="_blank">2009 <span>PDF ↗</span></a>
+            </div>
+        </details>
+
+        <!-- 2010 - 2019 -->
+        <details class="year-group">
+            <summary>2010 – 2019</summary>
+            <div class="years">
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2010ltr.pdf" target="_blank">2010 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2011ltr.pdf" target="_blank">2011 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2012ltr.pdf" target="_blank">2012 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2013ltr.pdf" target="_blank">2013 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2014ltr.pdf" target="_blank">2014 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2015ltr.pdf" target="_blank">2015 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2016ltr.pdf" target="_blank">2016 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2017ltr.pdf" target="_blank">2017 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2018ltr.pdf" target="_blank">2018 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2019ltr.pdf" target="_blank">2019 <span>PDF ↗</span></a>
+            </div>
+        </details>
+
+        <!-- 2020 - 2024 -->
+        <details class="year-group">
+            <summary>2020 – 2024</summary>
+            <div class="years">
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2020ltr.pdf" target="_blank">2020 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2021ltr.pdf" target="_blank">2021 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2022ltr.pdf" target="_blank">2022 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2023ltr.pdf" target="_blank">2023 <span>PDF ↗</span></a>
+                <a class="year-link" href="https://www.berkshirehathaway.com/letters/2024ltr.pdf" target="_blank">2024 <span>PDF ↗</span></a>
+            </div>
+        </details>
+
+        <!-- Greg Abel -->
+        <section class="greg-section">
+            <h2>Greg Abel's Shareholder Letter</h2>
+            <p>
+                Read the 2025 shareholder letter written by Greg Abel,
+                Berkshire Hathaway's CEO.
+            </p>
+            <a class="greg-link"
+               href="https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+               target="_blank">
+                View 2025 Letter ↗
+            </a>
+        </section>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+    </main>
+
+    <footer>
+        <p>BERKSHIRE HATHAWAY INC.</p>
+        <p>3555 Farnam Street, Omaha, NE 68131</p>
+        <p>© Berkshire Hathaway Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

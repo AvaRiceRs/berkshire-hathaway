@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Berkshire Hathaway | Inicio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos adicionales para los menús desplegables -->
+    <style>
+        .resource-dropdown {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .resource-dropdown summary {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .resource-dropdown summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .resource-dropdown summary .fa-chevron-right {
+            transition: transform 0.25s ease;
+        }
+
+        .resource-dropdown[open] summary .fa-chevron-right {
+            transform: rotate(90deg);
+        }
+
+        .dropdown-items {
+            padding: 0 15px 10px 15px;
+        }
+
+        .dropdown-items a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 9px 0;
+            color: #526176;
+            text-decoration: none;
+            font-size: 13px;
+            border-bottom: 1px solid #edf0f4;
+        }
+
+        .dropdown-items a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-items a:hover {
+            color: #bd9137;
+        }
+
+        .dropdown-items a i {
+            color: #bd9137;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+   <!-- ENCABEZADO -->
+<header class="header">
+    <div class="logo">
+        <h1>Berkshire<br>Hathaway <span>Inc.</span></h1>
+    </div>
+</header>
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <span class="hero-label">BERKSHIRE HATHAWAY INC.</span>
+
+            <h2>Construyendo valor a largo plazo.</h2>
+
+            <p>
+                Una organización comprometida con el crecimiento,
+                la inversión y el desarrollo de empresas excepcionales.
+            </p>
+
+            <a href="#categorias" class="hero-button">
+                Explorar información
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CATEGORÍAS -->
+    <main class="main-content" id="categorias">
+
+        <div class="section-heading">
+            <span class="gold-line"></span>
+            <h2>Explora nuestras secciones</h2>
+            <p>
+                Encuentra información financiera, noticias y recursos
+                importantes de Berkshire Hathaway.
+            </p>
+        </div>
+
+
+        <div class="categories-grid">
+
+            <!-- INFORMACIÓN FINANCIERA -->
+            <article class="category-card" id="finanzas">
+
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div>
+                        <h3>Información financiera</h3>
+                        <p>Reportes, acciones y documentos financieros.</p>
+                    </div>
+                </div>
+
+                <div class="links-list">
+
+                    <!-- INFORMES FINANCIEROS -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Annual & Interim Reports
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+                            <a href="https://www.berkshirehathaway.com/reports.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Annual Reports
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/reports.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Interim Reports
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- DOCUMENTOS SEC -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Link to SEC Filings
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+                            <a href="https://www.sec.gov/edgar/search/"
+                               target="_blank" rel="noopener noreferrer">
+                                SEC Company Filings
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- INFORMACIÓN DE ACCIONES -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Common Stock Information
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+                            <a href="https://www.berkshirehathaway.com/brkshareholderinfo/brkshareholderinfo.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Shareholder Information
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- PRESENTACIONES DE BHE -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Berkshire Hathaway Energy Investor Presentations
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+                            <a href="https://www.berkshirehathaway.com/bhenergy/bhenergypresentations.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Investor Presentations
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                </div>
+
+            </article>
+
+
+            <!-- ACCIONISTAS Y LIDERAZGO -->
+            <article class="category-card" id="accionistas">
+
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+                        <h3>Accionistas y liderazgo</h3>
+                        <p>Cartas y mensajes de los directivos.</p>
+                    </div>
+                </div>
+
+                <div class="links-list">
+
+                    <a href="https://www.berkshirehathaway.com/message.html"
+                       target="_blank" rel="noopener noreferrer"
+                       class="resource-link">
+                        A Message from Warren E. Buffett
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                    <a href="shareholder-letters.html"
+                       class="resource-link">
+                        Warren Buffett's Letters to Berkshire Shareholders
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                    <a href="https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+                       target="_blank" rel="noopener noreferrer"
+                       class="resource-link">
+                        Greg Abel's Letters to Berkshire Shareholders
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+
+                    <!-- CHARLIE MUNGER: DESPLEGABLE -->
+                    <details class="resource-dropdown">
+
+                        <summary class="resource-link">
+                            Charlie Munger's Letters to Wesco Shareholders
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2009.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2009 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2008.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2008 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2007.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2007 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2006.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2006 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2005.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2005 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2004.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2004 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2003.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2003 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2002.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2002 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2001.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2001 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm2000.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                2000 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm1999.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                1999 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm1998.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                1998 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/wesco/cm1997.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                1997 Letter <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                        </div>
+                    </details>
+
+
+                    <!-- SPECIAL LETTERS: DESPLEGABLE -->
+                    <details class="resource-dropdown">
+
+                        <summary class="resource-link">
+                            Special Letters from Warren & Charlie
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+
+                            <a href="https://www.berkshirehathaway.com/SpecialLetters/WEB%20past%20present%20future%202014.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                Warren's Letter – 2014
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/SpecialLetters/CTM%20past%20present%20future%202014.pdf"
+                               target="_blank" rel="noopener noreferrer">
+                                Charlie's Letter – 2014
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </a>
+
+                        </div>
+                    </details>
+
+                </div>
+
+            </article>
+
+
+            <!-- NOTICIAS -->
+            <article class="category-card" id="noticias">
+
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+
+                    <div>
+                        <h3>Noticias y comunicados</h3>
+                        <p>Novedades y avisos importantes.</p>
+                    </div>
+                </div>
+
+                <div class="links-list">
+
+                    <a href="https://www.berkshirehathaway.com/news/2026news.html"
+                       target="_blank" rel="noopener noreferrer"
+                       class="resource-link">
+                        News Releases from Berkshire Hathaway and Warren Buffett
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                    <a href="https://www.berkshirehathaway.com/webfraud.pdf"
+                       target="_blank" rel="noopener noreferrer"
+                       class="resource-link">
+                        Fraudulent Claims Regarding Mr. Buffett's Endorsements
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EMPRESAS -->
+            <article class="category-card" id="empresas">
+
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <h3>Empresas y operaciones</h3>
+                        <p>Directorio de nuestras empresas operativas.</p>
+                    </div>
+                </div>
+
+                <div class="links-list">
+
+                    <a href="https://www.berkshirehathaway.com/subs/sublinks.html"
+                       target="_blank" rel="noopener noreferrer"
+                       class="resource-link">
+                        Links to Berkshire Operating Companies
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- GOBIERNO CORPORATIVO -->
+            <article class="category-card" id="gobierno">
+
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <div>
+                        <h3>Gobierno corporativo</h3>
+                        <p>Gobernanza, reuniones anuales y sostenibilidad.</p>
+                    </div>
+                </div>
+
+                <div class="links-list">
+
+                    <!-- DOCUMENTOS DE GOBIERNO CORPORATIVO -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Corporate Governance
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+
+                            <a href="https://www.berkshirehathaway.com/govern/govern.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Corporate Governance Guidelines
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/govern/govern.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Code of Business Conduct and Ethics
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/govern/govern.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Insider Trading Policy
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/govern/govern.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Audit Committee Charter
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://www.berkshirehathaway.com/govern/govern.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Governance, Compensation and Nominating Committee Charter
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <!-- REUNIÓN ANUAL -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Annual Meeting Information
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+                            <a href="https://www.berkshirehathaway.com/sharehold.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Annual Meeting Information
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- SOSTENIBILIDAD -->
+                    <details class="resource-dropdown">
+                        <summary class="resource-link">
+                            Sustainability
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </summary>
+
+                        <div class="dropdown-items">
+                            <a href="https://www.berkshirehathaway.com/sustainability/sustainabilityintro.html"
+                               target="_blank" rel="noopener noreferrer">
+                                Sustainability Information
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                </div>
+
+            </article>
+
+        </div>
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <h2>BERKSHIRE<br>HATHAWAY <span>INC.</span></h2>
+        </div>
+
+        <div class="footer-info">
+            <p>© 1977-2026 Berkshire Hathaway Inc.</p>
+
+            <a href="https://www.berkshirehathaway.com/webpolicies.html"
+               target="_blank" rel="noopener noreferrer">
+                Aviso legal
+            </a>
+
+            <span>|</span>
+
+            <a href="https://www.berkshirehathaway.com/webpolicies.html"
+               target="_blank" rel="noopener noreferrer">
+                Política de privacidad
+            </a>
+        </div>
+
+        <div class="footer-quote">
+            <p>"A long-term perspective creates extraordinary results."</p>
+            <span>— Warren E. Buffett</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>
